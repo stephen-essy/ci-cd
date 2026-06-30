@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Pipeline Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Live CI/CD Pipeline Dashboard</h1>
+            <p>Deploying this app to GitHub + Vercel proves the pipeline works!</p>
+        </header>
+
+        <main>
+            <section class="pipeline-visual">
+                <div class="stage" id="stage-git">
+                    <div class="icon">💻</div>
+                    <h3>1. Commit & Push</h3>
+                    <p class="status-text">Awaiting changes...</p>
+                </div>
+                <div class="arrow">➡️</div>
+                <div class="stage" id="stage-ci">
+                    <div class="icon">⚙️</div>
+                    <h3>2. Continuous Integration</h3>
+                    <p class="status-text">Build & Lint</p>
+                </div>
+                <div class="arrow">➡️</div>
+                <div class="stage" id="stage-cd">
+                    <div class="icon">🌐</div>
+                    <h3>3. Continuous Deployment</h3>
+                    <p class="status-text">Live on Vercel</p>
+                </div>
+            </section>
+
+            <section class="controls">
+                <button id="simulate-btn">Simulate Local Code Push</button>
+                <div id="log-console">
+                    <p class="system-msg">[System] Dashboard initialized. Ready to simulate pipeline.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Current Environment: <span class="badge production">Production</span></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
